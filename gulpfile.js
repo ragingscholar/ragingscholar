@@ -6,6 +6,8 @@ const exec = require('child_process').exec;
 const paths = {
     allSrcJs: 'src/**/*.js',
     libDir: 'lib',
+    allLessFiles: '_less/*.less',
+    cssDir: 'public/assets/css',
 };
 
 gulp.task('clean', () => {

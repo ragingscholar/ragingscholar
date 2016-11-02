@@ -1,0 +1,56 @@
+@import (reference) "syntax/variables";
+
+body {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    border-left: 2px solid @syntax-cursor-color;
+  }
+
+  .selected {
+    background-color: @syntax-selection-color;
+  }
+
+  .region {
+    border-bottom: 1px solid @syntax-cursor-color;
+    box-sizing: border-box;
+  }
+
+  .region1 {
+    border: 2px solid @syntax-result-marker-color-selected;
+    transition-duration: .1s;
+  }
+
+  .region2 {
+    border-radius: 2px;
+    background-color: @syntax-result-marker-color;
+    transition: border-color .4s;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+
+  .line-number {
+    color: @syntax-gutter-text-color;
+    -webkit-font-smoothing: antialiased;
+
+    &.cursor-line {
+      color: @syntax-gutter-text-color-selected;
+      background-color: @syntax-gutter-background-color-selected;
+    }
+    &.cursor-line-no-selection {
+      background-color: transparent;
+    }
+
+    .icon-right {
+      color: @syntax-text-color;
+    }
+  }
+}
