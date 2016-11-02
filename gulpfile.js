@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
+const less = require('gulp-less');
 const del = require('del');
 const exec = require('child_process').exec;
 
@@ -32,3 +33,10 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', ['watch', 'main']);
+
+
+gulp.task('build-less', function(){
+    return gulp.src(paths.allLessFiles)
+        .pipe(less())
+        .pipe(gulp.dest(paths.cssDir));
+});

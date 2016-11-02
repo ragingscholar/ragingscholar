@@ -1,0 +1,43 @@
+body {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+body .invisible {
+  color: #abb2bf;
+}
+body .cursor {
+  border-left: 2px solid #528bff;
+}
+body .selected {
+  background-color: #3e4451;
+}
+body .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+body .region1 {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+body .region2 {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+body .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+body .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+body .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+body .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+body .line-number .icon-right {
+  color: #abb2bf;
+}
