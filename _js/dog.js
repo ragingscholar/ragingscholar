@@ -1,9 +1,10 @@
+/* eslint-disable indent */
 export default class {
-    constructor (name) {
+    constructor(name) {
         this.name = name;
     }
 
-    bark () {
+    bark() {
         return `Wah wah, I am ${this.name}`;
     }
 }

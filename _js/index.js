@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import Dog from './dog';
 
 const str = 'ES6';

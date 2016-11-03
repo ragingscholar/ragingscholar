@@ -6,7 +6,8 @@ var _dog2 = _interopRequireDefault(_dog);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var str = 'ES6';
+var str = 'ES6'; /* eslint-disable no-console */
+
 console.log('Hello from ' + str);
 
 var toby = new _dog2.default('Toby');
