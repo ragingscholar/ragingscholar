@@ -21,7 +21,10 @@
         "extends": "airbnb",
         "plugins": [
             "import"
-        ]
+        ],
+        "env":  {
+            "browser": true
+        }
     },
     "devDependencies": {
         "babel-preset-latest": "^6.16.0",

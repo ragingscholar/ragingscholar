@@ -7,7 +7,7 @@ import babel from 'gulp-babel';
 import less from 'gulp-less';
 import eslint from 'gulp-eslint';
 import del from 'del';
-import { exec } from 'child_process';
+// import { exec } from 'child_process';
 
 const paths = {
     allJsFiles: '_js/**/*.js',
@@ -17,11 +17,11 @@ const paths = {
     gulpFile: 'gulpfile.babel.js',
 };
 
-gulp.task('clean-css', () => del(paths.cssDir));
+// gulp.task('clean-css', () => del(paths.cssDir));
 
-gulp.task('clean-js', ['clean-css'], () => del(paths.jsDir));
+gulp.task('clean', () => del([paths.jsDir, paths.cssDir]));
 
-gulp.task('build-less', ['clean-js'], () =>
+gulp.task('build-less', ['clean'], () =>
     gulp.src(paths.allLessFiles)
         .pipe(less())
         .pipe(gulp.dest(paths.cssDir))
@@ -44,10 +44,14 @@ gulp.task('lint', () =>
 );
 
 gulp.task('build', ['build-js'], (callback) => {
+    /*
     exec(`node ${paths.jsDir}`, (error, stdout) => {
         console.log(stdout);
         return callback(error);
     });
+    */
+    console.log('starting...');
+    return callback();
 });
 
 gulp.task('default', ['build', 'lint']);

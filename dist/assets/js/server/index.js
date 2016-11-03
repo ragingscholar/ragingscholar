@@ -1,6 +1,6 @@
 'use strict';
 
-var _dog = require('./dog');
+var _dog = require('../shared/dog');
 
 var _dog2 = _interopRequireDefault(_dog);
 
