@@ -11,9 +11,9 @@ import { exec } from 'child_process';
 
 const paths = {
     allJsFiles: '_js/**/*.js',
-    jsDir: 'public/assets/js',
+    jsDir: 'dist/assets/js',
     allLessFiles: '_less/*.less',
-    cssDir: 'public/assets/css',
+    cssDir: 'dist/assets/css',
     gulpFile: 'gulpfile.babel.js',
 };
 
