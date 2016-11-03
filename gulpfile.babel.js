@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable indent */
 /* eslint-disable no-console */
 
 import gulp from 'gulp';
