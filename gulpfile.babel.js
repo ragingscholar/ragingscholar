@@ -1,8 +1,15 @@
+/*
 const gulp = require('gulp');
 const babel = require('gulp-babel');
 const less = require('gulp-less');
 const del = require('del');
 const exec = require('child_process').exec;
+*/
+import gulp from 'gulp';
+import babel from 'gulp-babel';
+import less from 'gulp-less';
+import del from 'del';
+import { exec } from 'child_process';
 
 const paths = {
     allJsFiles: '_js/**/*.js',
