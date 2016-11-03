@@ -12,18 +12,16 @@ import webpack from 'webpack-stream';
 import webpackConfig from './webpack.config.babel';
 
 const paths = {
-    allJsFiles: '_js/**/*.js',
-    serverJsFiles: '_js/server/**/*.js',
-    sharedJsFiles: '_js/shared/**/*.js',
-    clientEntryPoint: '_js/client/app.js',
+    allJsFiles: '_js/**/*.js?(x)',
+    serverJsFiles: '_js/server/**/*.js?(x)',
+    sharedJsFiles: '_js/shared/**/*.js?(x)',
+    clientEntryPoint: '_js/client/app.jsx',
     jsDir: 'dist/assets/js',
     allLessFiles: '_less/*.less',
     cssDir: 'dist/assets/css',
     gulpFile: 'gulpfile.babel.js',
     webpackFile: 'webpack.config.babel.js',
 };
-
-// gulp.task('clean-css', () => del(paths.cssDir));
 
 gulp.task('clean', () => del([paths.jsDir, paths.cssDir]));
 
