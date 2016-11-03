@@ -15,7 +15,7 @@ const paths = {
     allJsFiles: '_js/**/*.js?(x)',
     serverJsFiles: '_js/server/**/*.js?(x)',
     sharedJsFiles: '_js/shared/**/*.js?(x)',
-    clientEntryPoint: '_js/client/app.js',
+    clientEntryPoint: '_js/client/app.jsx',
     jsDir: 'dist/assets/js',
     allLessFiles: '_less/*.less',
     cssDir: 'dist/assets/css',
