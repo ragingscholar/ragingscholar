@@ -1,10 +1,12 @@
 /* eslint-disable indent */
 /* eslint-disable react/jsx-indent */
 
-import 'babel-polyfill';
+// import 'babel-polyfill';
 
-import React, { PropTypes } from 'react';
-import ReactDOM from 'react-dom';
+// import React, { PropTypes } from 'react';
+// import ReactDOM from 'react-dom';
+
+/*
 import Dog from '../shared/dog';
 
 const dogBark = new Dog('Browser Toby').bark();
@@ -20,3 +22,4 @@ App.propTypes = {
 };
 
 ReactDOM.render(<App message={dogBark} />, document.querySelector('.app'));
+*/

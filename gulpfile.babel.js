@@ -12,10 +12,10 @@ import webpack from 'webpack-stream';
 import webpackConfig from './webpack.config.babel';
 
 const paths = {
-    allJsFiles: '_js/**/*.js?(x)',
-    serverJsFiles: '_js/server/**/*.js?(x)',
-    sharedJsFiles: '_js/shared/**/*.js?(x)',
-    clientEntryPoint: '_js/client/app.jsx',
+    allJsFiles: '_js/**/*.js',
+    serverJsFiles: '_js/server/**/*.js',
+    sharedJsFiles: '_js/shared/**/*.js',
+    clientEntryPoint: '_js/client/app.js',
     jsDir: 'dist/assets/js',
     allLessFiles: '_less/*.less',
     cssDir: 'dist/assets/css',
