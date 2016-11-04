@@ -8,36 +8,40 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _redux = require('redux');
+var _reactMarkdown = require('react-markdown');
 
-var _reactRedux = require('react-redux');
+var _reactMarkdown2 = _interopRequireDefault(_reactMarkdown);
 
-var _dogReducer = require('./reducers/dog-reducer');
-
-var _dogReducer2 = _interopRequireDefault(_dogReducer);
-
-var _barkMessage = require('./containers/bark-message');
-
-var _barkMessage2 = _interopRequireDefault(_barkMessage);
-
-var _barkButton = require('./containers/bark-button');
-
-var _barkButton2 = _interopRequireDefault(_barkButton);
+var _welcome = require('../../_posts/welcome');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var store = (0, _redux.createStore)((0, _redux.combineReducers)({
-    dog: _dogReducer2.default
-})); /* eslint-disable indent */
+/*
+const store = createStore(combineReducers({
+    dog: dogReducer,
+}));
+
+ReactDOM.render(
+    <Provider store={store}>
+        <div>
+            <BarkMessage />
+            <BarkButton />
+        </div>
+    </Provider>
+    , document.querySelector('.app')
+);
+*/
+
+// import { createStore, combineReducers } from 'redux';
+// import { Provider } from 'react-redux';
+// import dogReducer from './reducers/dog-reducer';
+// import BarkMessage from './containers/bark-message';
+// import BarkButton from './containers/bark-button';
+/* eslint-disable indent */
 /* eslint-disable react/jsx-indent */
 
 _reactDom2.default.render(_react2.default.createElement(
-    _reactRedux.Provider,
-    { store: store },
-    _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(_barkMessage2.default, null),
-        _react2.default.createElement(_barkButton2.default, null)
-    )
+    'div',
+    null,
+    _react2.default.createElement(_reactMarkdown2.default, { source: _welcome.CONTENT })
 ), document.querySelector('.app'));
