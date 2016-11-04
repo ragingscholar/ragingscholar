@@ -15,7 +15,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* eslint-disable indent */
 var mapStateToProps = function mapStateToProps(state) {
     return {
-        message: state.dog.hasBarked ? 'The dog barked' : 'The dog did not bark'
+        message: state.dog.get('hasBarked') ? 'The dog barked' : 'The dog did not bark'
     };
 };
 

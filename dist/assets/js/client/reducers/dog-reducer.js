@@ -4,12 +4,18 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _immutable = require('immutable');
+
+var _immutable2 = _interopRequireDefault(_immutable);
+
 var _dogActions = require('../actions/dog-actions');
 
-var initialState = {
-    hasBarked: false
-}; /* eslint-disable indent */
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/* eslint-disable indent */
+var initialState = _immutable2.default.Map({
+    hasBarked: false
+});
 
 var dogReducer = function dogReducer() {
     var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -17,7 +23,7 @@ var dogReducer = function dogReducer() {
 
     switch (action.type) {
         case _dogActions.MAKE_BARK:
-            return { hasBarked: action.payload };
+            return state.set('hasBarked', action.payload);
         default:
             return state;
     }
