@@ -1,6 +1,21 @@
 body {
   background-color: #282c34;
   color: #abb2bf;
+  margin-left: 20px;
+}
+body h1 {
+  font-size: 2em;
+  padding-left: 10px;
+  color: #e5c07b;
+}
+body h2 {
+  font-size: 1.5em;
+  padding-left: 10px;
+  color: #61afef;
+}
+body a {
+  color: #c678dd;
+  font-style: italic;
 }
 body .invisible {
   color: #abb2bf;
